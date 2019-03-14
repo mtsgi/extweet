@@ -1,5 +1,5 @@
 chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
-	if( request == "Action" ){
-        open();
-	}
-});
+    if (request == "sendOpen") {
+        alert( sender );
+    }
+}); 
